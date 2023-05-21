@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, CreateView
 from Company.models import Company, Job
-from django.views import View
 
 
 class AboutView(TemplateView):
@@ -20,8 +19,7 @@ class storeView(TemplateView):
     template_name = 'store.html'
 
 
-###########
-##########List company and job in home page !
+##List company and job in home page !
 # class HomeView(TemplateView):
 #     def get(self, request):
 #         companies = Company.objects.all()
