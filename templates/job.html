@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="main">Job page</h1>
+<div class="main">
+    <button class="button">
+    <a class="button" href="{% url 'job_create' %}">+ Create Job</a>
+    </button>
+</div>
+{% for job in job_list %}
+<div class="main">
+    <h2>
+        <a href="{% url 'job_detile' job.pk %}" class="link_main">
+            {{ job.first_name }} {{ job.last_name }}
+        </a>
+    </h2>
+</div>
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="main">Home page</h1>
+<h3 class="main">Update Name Partners </h3>
+
+<ul class="main">
+    <div class="shadow p-4 mb-4 bg-white">
+        {% for company in comp %}
+
+        <li style="font-size:125%;">
+            {{company.name_partners}}
+        </li>
+        {% empty %}
+        <li style="font-size:120%;">
+            No companies found.
+        </li>
+
+        {% endfor %}
+    </div>
+
+</ul>
+
+{% endblock %}
