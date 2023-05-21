@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView, ListView, CreateView
-from Company.models import Company
+from Company.models import Company, Job
+from django.views import View
 
 
 class AboutView(TemplateView):
@@ -19,13 +20,23 @@ class storeView(TemplateView):
     template_name = 'store.html'
 
 
+###########
+##########List company and job in home page !
 # class HomeView(TemplateView):
-#     template_name = 'home.html'
-
+#     def get(self, request):
+#         companies = Company.objects.all()
+#         jobs = Job.objects.all()
+#         context = {
+#             'comp2': companies,
+#             'job_li': jobs,
+#         }
+#         return render(request, 'home.html', context)
 class ListCompany(ListView):
     model = Company
     template_name = 'home.html'
-    context_object_name = 'comp'
+    context_object_name = 'comp2'
 
-
-
+# class ListJobHome(ListView): # not work in home
+#     model = Job
+#     template_name = 'home.html'
+#     context_object_name = 'job_li'

@@ -3,8 +3,8 @@
 {% block content %}
 <h1 class="main">Company list name partners</h1>
 <ul>
-    {% for company in comp %}
-    <li class="main", style="font-size:125%;">
+    {% for company in comp_view %}
+    <li class="main" , style="font-size:125%;">
         {{ company }} : {{company.name_partners}}
     </li>
     {% empty %}

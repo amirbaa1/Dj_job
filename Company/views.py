@@ -6,7 +6,7 @@ from .models import Company, Job
 class ListCompany2(ListView):
     model = Company
     template_name = 'company.html'
-    context_object_name = 'comp'
+    context_object_name = 'comp_view'
 
 
 class JobCreate(CreateView):
@@ -21,7 +21,7 @@ class JobList(ListView):
     context_object_name = 'job_list'
 
 
-class job_detile(DeleteView):
+class job_details(DeleteView):
     model = Job
     template_name = 'job_detile.html'
-    context_object_name = 'job_detile'
+    context_object_name = 'job_details'

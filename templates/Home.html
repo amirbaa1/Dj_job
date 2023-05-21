@@ -1,24 +1,33 @@
 {% extends 'base.html' %}
-
 {% block content %}
+
 <h1 class="main">Home page</h1>
+
+
+<!--<div class="row_text">-->
+<!--    <div class="column_text">  col_row -->
+<!--    <div class="border-with-shadow"> border_shadow -->
 <h3 class="main">Update Name Partners </h3>
-
 <ul class="main">
-    <div class="shadow p-4 mb-4 bg-white">
-        {% for company in comp %}
 
-        <li style="font-size:125%;">
-            {{company.name_partners}}
-        </li>
-        {% empty %}
-        <li style="font-size:120%;">
-            No companies found.
-        </li>
-
-        {% endfor %}
-    </div>
-
+    {% for company in comp2 %}
+    <li style="font-size:125%;">
+        {{company.name_partners}}
+    </li>
+    {% endfor %}
 </ul>
 
+<!--    </div>-->
+
+<!--<div class="column_text">-->
+<!--    <h3 class="main">Update job</h3>-->
+<!--    <ul class="main">-->
+<!--        {% for job in job_li %}-->
+<!--        <li style="font-size:125%;">-->
+<!--            {{job.first_name}} {{job.last_name}}-->
+<!--        </li>-->
+<!--        {% endfor %}-->
+<!--    </ul>-->
+<!--</div>-->
+<!--</div>-->
 {% endblock %}
