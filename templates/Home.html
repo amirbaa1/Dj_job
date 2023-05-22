@@ -7,16 +7,19 @@
 <!--<div class="row_text">-->
 <!--    <div class="column_text">  col_row -->
 <!--    <div class="border-with-shadow"> border_shadow -->
-<h3 class="main">Update Name Partners </h3>
-<ul class="main">
 
-    {% for company in comp2 %}
-    <li style="font-size:125%;">
-        {{company.name_partners}}
-    </li>
-    {% endfor %}
-</ul>
-
+<div class="main">
+    <div class="border_text_list">
+        <h3>pdate Name Partners </h3>
+        <ul>
+            {% for company in comp2 %}
+            <li style="font-size:125%;">
+                {{company.name_partners}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 <!--    </div>-->
 
 <!--<div class="column_text">-->

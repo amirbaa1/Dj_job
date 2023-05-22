@@ -23,4 +23,3 @@ class Job(models.Model):
 
     def get_absolute_url(self):
         return reverse('job_detile', args=[str(self.id)])
-

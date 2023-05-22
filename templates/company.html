@@ -1,15 +1,19 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1 class="main">Company list name partners</h1>
-<ul>
-    {% for company in comp_view %}
-    <li class="main" , style="font-size:125%;">
-        {{ company }} : {{company.name_partners}}
-    </li>
-    {% empty %}
-    <li class="main" ,style="font-size:120%;">No companies found.
-    </li>
-    {% endfor %}
-</ul>
+
+
+<div class="main">
+    <h1>Company</h1>
+    <div class="border_text_list">
+        <h3>Company list name partners</h3>
+        <ul>
+            {% for company in comp_view %}
+            <li style="font-size:125%;">
+                <b>{{ company }}</b> : {{company.name_partners}}
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
 {% endblock %}

@@ -93,3 +93,11 @@ column_text {
   padding: 5px;
   margin-left: 100px;
 }
+
+.border_text_list{
+border: 1px solid #FFFFFF;
+margin-right: 1300px;
+padding:20px;
+box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
+
+}

@@ -8,13 +8,19 @@
             <a class="button" href="{% url 'job_list' %}">back</a>
         </button>
     </p>
-
-    <h2>
-        {{job_details.first_name}} {{job_details.last_name}}
-    </h2>
-    <p>
-        {{job_details.text}}
-    </p>
+    <div class="border_text_list">
+        <h2>
+            {{job_details.first_name}} {{job_details.last_name}}
+        </h2>
+        <p>
+            <b>Email : </b>{{job_details.email}}
+        </p>
+        <p>
+            <b>Number phone : </b>{{job_details.phone_number}}
+        </p>
+        <p>
+            <b>Text : </b>{{job_details.text}}
+        </p>
+    </div>
 </div>
-
 {% endblock content %}
