@@ -1,6 +1,7 @@
 
 body {
   font-family: arial;
+  background-color:#F2F3F4;
 }
 
 .side {
@@ -96,8 +97,8 @@ column_text {
 
 .border_text_list{
 border: 1px solid #FFFFFF;
-margin-right: 1300px;
-padding:20px;
+margin-right: 800px;
+padding:10px;
 box-shadow: 0px 0 5px rgba(0, 0, 0, 0.3);
-
+background-color:#FFFFFF;
 }
