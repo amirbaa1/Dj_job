@@ -8,6 +8,7 @@ class ListCompany2(ListView):
     model = Company
     template_name = 'company.html'
     context_object_name = 'comp_view'
+    ordering = ['-id']
 
 
 class JobCreate(CreateView):
@@ -20,6 +21,7 @@ class JobList(ListView):
     model = Job
     template_name = 'job.html'
     context_object_name = 'job_list'
+    ordering = ['-id']
 
 
 class job_details(DeleteView):

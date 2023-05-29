@@ -34,4 +34,3 @@ class ListCompany(ListView):
     model = Company
     template_name = 'home.html'
     context_object_name = 'comp2'
-
