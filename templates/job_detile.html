@@ -21,6 +21,15 @@
         <p>
             <b>Text : </b>{{job_details.text}}
         </p>
+
+        <a href="{% url 'job_update' job_details.pk %}" class="button">+ Edit Book</a>
+        <a class="button_back" href="{% url 'job_delete_urls' job_details.pk %}">- Delete Book</a>
+        <br>
+        <br>
+        <button class="button_back_details" type="button">
+            <a class="button_back_details" href="{% url 'job_list' %}">back</a>
+        </button>
+
     </div>
 </div>
 {% endblock content %}

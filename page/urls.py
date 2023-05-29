@@ -3,7 +3,7 @@ from .views import *
 from Company.views import JobList
 
 urlpatterns = [
-    # path('', HomeView.as_view(), name='home'), # see list company and job in home page home.html.
+    path('', HomeView.as_view(), name='home'), # see list company and job in home page home.html.
     path('', ListCompany.as_view(), name='home'),
     path('about/', AboutView.as_view(), name='about'),
     path('contact_us/', ContactView.as_view(), name='contact_us'),

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="main">Delete</h1>
+
+<br>
+<div class="main" style="padding-left:10px;">
+    <div style="text-align: center;">
+        <div class="border_text_list">
+            <form action="" method="post">
+                {% csrf_token %}
+                <p>
+                    Are you sure you want to delete <b>{{ job_delete.first_name }} {{ job_delete.last_name }}</b>?
+                </p>
+                <input type="submit" value="Yes" class="button">
+                <a class="button_back" href="{% url 'job_list' %}">No</a>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -19,22 +19,19 @@ class storeView(TemplateView):
     template_name = 'store.html'
 
 
-##List company and job in home page !
-# class HomeView(TemplateView):
-#     def get(self, request):
-#         companies = Company.objects.all()
-#         jobs = Job.objects.all()
-#         context = {
-#             'comp2': companies,
-#             'job_li': jobs,
-#         }
-#         return render(request, 'home.html', context)
+class HomeView(TemplateView):
+    def get(self, request):
+        companies = Company.objects.all()
+        jobs = Job.objects.all()
+        context = {
+            'comp2': companies,
+            'job_li': jobs,
+        }
+        return render(request, 'home.html', context)
+
+
 class ListCompany(ListView):
     model = Company
     template_name = 'home.html'
     context_object_name = 'comp2'
 
-# class ListJobHome(ListView): # not work in home
-#     model = Job
-#     template_name = 'home.html'
-#     context_object_name = 'job_li'

@@ -20,6 +20,5 @@ class Job(models.Model):
 
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
-
     def get_absolute_url(self):
-        return reverse('job_detile', args=[str(self.id)])
+        return reverse('job_details', args=[str(self.id)])
